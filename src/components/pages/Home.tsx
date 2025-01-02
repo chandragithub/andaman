@@ -1,18 +1,16 @@
-import { Destinations } from "../layout/Destinations";
-import { Footer } from "../layout/Footer";
-import { Header } from "../layout/Header";
 import { Hero } from "../layout/Hero";
+import { activities, destinations } from "@/Data";
+import { CardCircleSection, CardSection } from "@/components/custom";
 
 // import { GetStartedDialog } from "@/GetStarted/GetStartedDialog";
-export function Layout() {
+export const Home = () => {
   return (
-    <div className="flex h-screen w-full flex-col">
-        <Header/>
+    <div className="flex w-full flex-col">
         <main>
           <Hero/>
-          <Destinations/>
+          <CardSection data={destinations} title={"Popular Destinations"} description={"Explore some of our travelers' favorite locations"} button={{}}/>
+          <CardCircleSection data={activities} title={"Popular Activities"} description={"Explore some of our travelers' favorite activities"}/>
         </main>
-        <Footer/>
     </div>
   );
 }

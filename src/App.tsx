@@ -1,12 +1,22 @@
 import './App.css'
-import { Layout } from './components/pages/Home'
+import { Outlet } from "react-router";
+import { Routes, Route } from "react-router";
+import { Footer, Header } from '@/components/layout';
+import { Home, NoPageFound } from '@/components/pages';
+
 
 function App() {
 
   return (
-    <>
-      <Layout />
-    </>
+    <section>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<NoPageFound/>} />
+      </Routes>
+      <Outlet />
+      <Footer/>
+    </section>
   )
 }
 

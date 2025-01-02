@@ -1,5 +1,5 @@
-import { GetStartedDialog } from "@/components/layout/GetStartedDialog"
-
+// import { GetStartedDialog } from "@/components/layout/GetStartedDialog";
+import { NavLink } from "react-router";
 export const Header = () => {
     return (
         <>
@@ -7,7 +7,9 @@ export const Header = () => {
             <nav className="w-full justify-between flex flex-row items-center gap-6">
                     <div className="flex items-center gap-6 md:gap-10">
                     <a href="/">
-                        <h1 className="text-base font-semibold text-green-600">AndamanView</h1>
+                        <h1 className="text-lg font-semibold text-green-600">
+                        ａｎｄａｍａｎｖｉｅｗ
+                        </h1>
                     </a>
                     <div className="flex items-center gap-4 text-sm">
                         {/* <GetStartedDialog>
@@ -15,14 +17,14 @@ export const Header = () => {
                                 Destination
                             </button>
                         </GetStartedDialog> */}
-                        <a>
-                            Things To Do
+                        <a className="hover">
+                            <NavLink to="/about" end>Things To Do</NavLink>
                         </a>
-                        <a>
-                            Plan Your Trip
+                        <a className="hover">
+                            <NavLink to="/about" end>Plan Your Trip</NavLink>
                         </a>
-                        <a>
-                            Rent a Vehicle
+                        <a className="hover">
+                            <NavLink to="/about" end>Rent a Vehicle</NavLink>
                         </a>
                     </div>
                     </div>
