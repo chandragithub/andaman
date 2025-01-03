@@ -1,5 +1,5 @@
 import { Button } from "../ui/button"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card";
 
 export const CardSection = (props: any) => {
     return (
@@ -16,7 +16,7 @@ export const CardSection = (props: any) => {
                 <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {props.data.map((data: any, index: number) => (
                     <Card key={index} className="flex flex-col">
-                        <img src={data.image} alt={data.name} className="h-48 w-full object-cover" />
+                        <img src={`src/assets/images/destination/${data.image}.jpg`} alt={data.name} className="h-48 w-full object-cover" />
                         <CardHeader>
                             <CardTitle>{data.name}</CardTitle>
                         </CardHeader>

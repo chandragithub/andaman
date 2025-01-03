@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import andamanImage from '../../assets/images/andamanmap.png';
 
 export const Hero = () => {
   return (
@@ -22,7 +21,7 @@ export const Hero = () => {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <Button className="w-full px-8 py-3 md:py-4 md:text-lg md:px-10">
-                    Learn More
+                    Book Now
                   </Button>
                 </div>
               </div>

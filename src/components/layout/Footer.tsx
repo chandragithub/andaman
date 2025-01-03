@@ -52,7 +52,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <Link href="#" >
-                      Trecking
+                      Day Tour
                     </Link>
                   </li>
                   <li>

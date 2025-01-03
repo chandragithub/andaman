@@ -1,4 +1,3 @@
-import { Code } from "@/components/Code";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -82,8 +81,6 @@ function GetStartedContent() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            Edit <Code>convex/messages.ts</Code> to change the backend
-            functionality.
           </CardContent>
         </Card>
         <Card>
@@ -94,7 +91,6 @@ function GetStartedContent() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            Edit <Code>src/App.tsx</Code> to change your frontend.
           </CardContent>
         </Card>
       </div>

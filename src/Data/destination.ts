@@ -2,21 +2,21 @@ export const destinations = [
     {
       name: "Port Blair",
       description: "Tropical paradise with beautiful beaches and rich culture.",
-      image: "https://www.masstrans.in/wp-content/uploads/Port-Blair-Smart-City-1080x675.jpeg"
+      image: "portblair"
     },
     {
       name: "Havelock Island",
-      description: "Stunning sunsets and iconic white-washed buildings.",
-      image: "/placeholder.svg?height=300&width=400"
+      description: "Havelock Island is part of Ritchie’s Archipelago, in India’s Andaman Islands.",
+      image: "havelock"
     },
     {
       name: "Neil Island",
-      description: "Ancient Incan citadel set high in the Andes Mountains.",
-      image: "/placeholder.svg?height=300&width=400"
+      description: "Neil Island has coral reefs teeming with tropical fish.",
+      image: "neil"
     },
     {
       name: "Ross Island",
-      description: "Ultramodern cityscape blended with traditional culture.",
-      image: "/placeholder.svg?height=300&width=400"
+      description: "Ross Island was once the British capital of Andaman & Nicobar Islands.",
+      image: "ross"
     }
   ]
