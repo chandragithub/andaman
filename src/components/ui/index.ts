@@ -8,3 +8,4 @@ export * from './toast';
 export * from './toaster';
 export * from './toggle';
 export * from './toggle-group';
+export * from './select';

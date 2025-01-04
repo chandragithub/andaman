@@ -1,5 +1,7 @@
+import { getImageUrl } from "@/lib/utils";
 import { Button } from "../ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card";
+import { Link } from "../ui";
 
 export const CardSection = (props: any) => {
     return (
@@ -16,21 +18,23 @@ export const CardSection = (props: any) => {
                 <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {props.data.map((data: any, index: number) => (
                     <Card key={index} className="flex flex-col">
-                        <img src={`src/assets/images/destination/${data.image}.jpg`} alt={data.name} className="h-48 w-full object-cover" />
+                        <img src={getImageUrl(props.imageFolder, data.image)} alt={data.name} className="h-48 w-full object-cover" />
                         <CardHeader>
                             <CardTitle>{data.name}</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-grow">
-                            <p>{data.description}</p>
+                            <p>
+                                {data.description} {props.knowMore && <span className="text-xs"><Link href="#"> Know More...</Link></span>}
+                            </p>
                         </CardContent>
-                        <CardFooter>
+                        { props?.button && <CardFooter>
                             {
                                props.button?.sec &&  <Button className="w-full mr-5 text-green-600">{props.button.sec.name}</Button>
                             }
                             {
                                props.button?.primary &&  <Button className="w-full">{props.button.primary.name}</Button>
                             }
-                        </CardFooter>
+                        </CardFooter>}
                     </Card>
                 ))}
                 </div>

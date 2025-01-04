@@ -20,7 +20,7 @@ export const activities = [
       image: "parasailing"
     },
     {
-      name: "SubMarine Ride",
+      name: "Sub Marine",
       description: "",
       image: "submarine"
     },

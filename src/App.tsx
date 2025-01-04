@@ -1,9 +1,12 @@
 import './App.css'
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+import "@radix-ui/themes/styles.css";
 import { Outlet } from "react-router";
 import { Routes, Route } from "react-router";
 import { Footer, Header } from '@/components/layout';
 import { Activity, Home, NoPageFound, Package } from '@/components/pages';
 import { Ads } from './components/layout/Ads';
+
 
 
 function App() {

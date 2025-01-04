@@ -52,7 +52,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <Link href="#" >
-                      Day Tour
+                      Family Tours
                     </Link>
                   </li>
                   <li>
@@ -64,27 +64,27 @@ export const Footer = () => {
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase">Company</h3>
+            <div className="mt-12 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase">Services</h3>
                 <ul className="mt-4 space-y-4 text-gray-300">
                   <li>
                     <Link href="#" >
-                      About Us
+                      Hire a Vehicle
                     </Link>
                   </li>
                   <li>
                     <Link href="#" >
-                      Blog
+                      Shopping
                     </Link>
                   </li>
                   <li>
                     <Link href="#" >
-                      Careers
+                      Food & Cafe
                     </Link>
                   </li>
                   <li>
                     <Link href="#" >
-                      Contact
+                      Tour Guide
                     </Link>
                   </li>
                 </ul>
@@ -94,12 +94,12 @@ export const Footer = () => {
                 <ul className="mt-4 space-y-4 text-gray-300">
                   <li>
                     <Link href="#" >
-                      FAQs
+                      Contact Us
                     </Link>
                   </li>
                   <li>
                     <Link href="#" >
-                      Terms & Conditions
+                      About Us
                     </Link>
                   </li>
                   <li>

@@ -6,7 +6,7 @@ export const destinations = [
     },
     {
       name: "Havelock Island",
-      description: "Havelock Island is part of Ritchie’s Archipelago, in India’s Andaman Islands.",
+      description: "Havelock Island is part of Ritchie\’s Archipelago in Andaman Islands.",
       image: "havelock"
     },
     {

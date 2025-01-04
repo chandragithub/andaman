@@ -1,3 +1,5 @@
+import { getImageUrl } from "@/lib/utils";
+
 export const CardCircleSection = (props: any) => {
     return (
         <section className="py-12 bg-gray-50">
@@ -10,10 +12,10 @@ export const CardCircleSection = (props: any) => {
                     {props.description}
                 </p>
                 </div>
-                <div className="mt-4 grid gap-8 xsm:grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-8 rounded-lg bg-white p-5">
+                <div className="mt-4 grid gap-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 rounded-lg bg-white p-5">
                     {props.data.map((data: any, index: number) => (
                         <div key={index} className="flex flex-col text-center items-center">
-                            <img src={`/src/assets/images/activity/${data.image}.jpg`} alt={data.name} className="h-20 w-20 object-cover rounded-full" />
+                            <img src={getImageUrl('activity', data.image)} alt={data.name} className="h-20 w-20 object-cover rounded-full" />
                             <p className="pt-1">{data.name}</p>
                         </div>
                     ))}
